@@ -3,10 +3,10 @@
 [![Build Status](https://travis-ci.org/justinas/nosurf.svg?branch=master)](https://travis-ci.org/justinas/nosurf)
 [![GoDoc](http://godoc.org/github.com/justinas/nosurf?status.png)](http://godoc.org/github.com/justinas/nosurf)
 
-`nosurf` is an HTTP package for Go
+`nosurf` is an HTTP package ([upstream](https://github.com/justinas/nosurf), written by [Justinas Stankevicius](https://github.com/justinas)) for Go
 that helps you prevent Cross-Site Request Forgery attacks.
 It acts like a middleware and therefore 
-is compatible with basically any Go HTTP application.
+is compatible with basically any Go HTTP application. 
 
 ### Why?
 Even though CSRF is a prominent vulnerability,
@@ -16,7 +16,7 @@ nor should they.
 
 `nosurf` solves this problem by providing a `CSRFHandler`
 that wraps your `http.Handler` and checks for CSRF attacks
-on every non-safe (non-GET/HEAD/OPTIONS/TRACE) method.
+on every non-safe request method excluding GET, HEAD, OPTIONS, TRACE and DELETE method.
 
 `nosurf` requires Go 1.1 or later.
 

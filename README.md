@@ -4,7 +4,7 @@
 [![GoDoc](http://godoc.org/github.com/justinas/nosurf?status.png)](http://godoc.org/github.com/justinas/nosurf)
 
 `nosurf` is an HTTP package ([upstream](https://github.com/justinas/nosurf), written by [Justinas Stankevicius](https://github.com/justinas)) for Go
-that helps you prevent Cross-Site Request Forgery attacks.
+that helps prevent Cross-Site Request Forgery attacks.
 It acts like a middleware and therefore 
 is compatible with basically any Go HTTP application. 
 

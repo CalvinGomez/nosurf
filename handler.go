@@ -23,7 +23,7 @@ const (
 	MaxAge = 365 * 24 * 60 * 60
 )
 
-var safeMethods = []string{"GET", "HEAD", "OPTIONS", "TRACE"}
+var safeMethods = []string{"GET", "HEAD", "OPTIONS", "TRACE", "DELETE"}
 
 // reasons for CSRF check failures
 var (

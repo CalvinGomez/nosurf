@@ -108,6 +108,7 @@ func NewPure(handler http.Handler) http.Handler {
 }
 
 func (h *CSRFHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	r = addNosurfContext(r)
 	defer ctxClear(r)
 	w.Header().Add("Vary", "Cookie")
 
